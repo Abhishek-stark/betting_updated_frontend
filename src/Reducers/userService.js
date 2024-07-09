@@ -95,7 +95,7 @@ const selecttenthColor = async (usercolor) => {
   const res = await axios.patch(
     `${url}/api/choosetenthColor`,
     usercolor,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
     {
       withCredentials: true,
     }
@@ -109,7 +109,7 @@ const selecttwoHundredColor = async (usercolor) => {
   const res = await axios.patch(
     `${url}/api/choosetwoHundredColor`,
     usercolor,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
     {
       withCredentials: true,
     }
@@ -123,7 +123,7 @@ const selecttweentyColor = async (usercolor) => {
   const res = await axios.patch(
     `${url}/api/choosetweentyColor`,
     usercolor,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    // { headers: { Authorization: `Bearer ${user?.token}` } },
     {
       withCredentials: true,
     }
@@ -137,7 +137,7 @@ const selectfourtyColor = async (usercolor) => {
   const res = await axios.patch(
     `${url}/api/choosefourtyColor`,
     usercolor,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
     {
       withCredentials: true,
     }
@@ -152,7 +152,7 @@ const selectsixtyColor = async (usercolor) => {
   const res = await axios.patch(
     `${url}/api/choosesixtyColor`,
     usercolor,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
     {
       withCredentials: true,
     }
@@ -167,7 +167,7 @@ const selectseventyColor = async (usercolor) => {
   const res = await axios.patch(
     `${url}/api/chooseseventyColor`,
     usercolor,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
     {
       withCredentials: true,
     }
@@ -182,7 +182,7 @@ const selectoneFiftyColor = async (usercolor) => {
   const res = await axios.patch(
     `${url}/api/chooseoneFiftyColor`,
     usercolor,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
     {
       withCredentials: true,
     }
@@ -197,7 +197,7 @@ const selecthundredColor = async (usercolor) => {
   const res = await axios.patch(
     `${url}/api/choosehundredColor`,
     usercolor,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
     {
       withCredentials: true,
     }
@@ -212,7 +212,7 @@ const joiningUser = async (joineuser) => {
   const res = await axios.patch(
     `${url}/api/letjoine`,
     joineuser,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
     {
       withCredentials: true,
     }
@@ -227,7 +227,7 @@ const joiningUser = async (joineuser) => {
 const checkColors = async () => {
   const res = await axios.get(
     `${url}/api/checkColor`,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
 
     { withCredentials: true }
   );
@@ -240,9 +240,9 @@ const checkColors = async () => {
 const tenjoin = async () => {
   const res = await axios.get(
     `${url}/api/tenjoining`,
-    {
-      headers: { Authorization: `Bearer ${user?.token}` },
-    },
+    // {
+    //   headers: { Authorization: `Bearer ${user?.token}` },
+    // },
     { withCredentials: true }
   );
   if (res.data) {
@@ -254,7 +254,7 @@ const tenjoin = async () => {
 const tweentyjoin = async () => {
   const res = await axios.get(
     `${url}/api/tweentyjoining`,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
 
     { withCredentials: true }
   );
@@ -267,7 +267,7 @@ const tweentyjoin = async () => {
 const fourtyjoin = async () => {
   const res = await axios.get(
     `${url}/api/fourtyjoining`,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
 
     { withCredentials: true }
   );
@@ -280,7 +280,7 @@ const fourtyjoin = async () => {
 const sixtyjoin = async () => {
   const res = await axios.get(
     `${url}/api/sixtyjoining`,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
 
     { withCredentials: true }
   );
@@ -293,7 +293,7 @@ const sixtyjoin = async () => {
 const seventyjoin = async () => {
   const res = await axios.get(
     `${url}/api/seventyjoining`,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
 
     { withCredentials: true }
   );
@@ -306,7 +306,7 @@ const seventyjoin = async () => {
 const hundredjoin = async () => {
   const res = await axios.get(
     `{url}/api/hundredjoining`,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
 
     { withCredentials: true }
   );
@@ -319,7 +319,7 @@ const hundredjoin = async () => {
 const onefiftyjoin = async () => {
   const res = await axios.get(
     `${url}/api/onefiftyjoining`,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
 
     { withCredentials: true }
   );
@@ -332,7 +332,7 @@ const onefiftyjoin = async () => {
 const twohundredjoin = async () => {
   const res = await axios.get(
     `${url}/api/twohundredjoining`,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
 
     { withCredentials: true }
   );
@@ -345,7 +345,7 @@ const twohundredjoin = async () => {
 const resetColor = async () => {
   const res = await axios.get(
     `${url}/api/reset`,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
 
     { withCredentials: true }
   );
