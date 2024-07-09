@@ -1,6 +1,6 @@
 import axios from "axios";
 const user = JSON.parse(localStorage.getItem("user"));
-const url = import.meta.env.VITE_SERVER_URL;
+const url = import.meta.env.VITE_BACKEND_URL;
 
 const signup = async (userData) => {
   const response = await axios.post(`${url}/api/signup`, userData, {
@@ -40,7 +40,7 @@ const login = async (logindata) => {
   const res = await axios.post(
     `${url}/api/login`,
     logindata,
-    { headers: { Authorization: `Bearer ${user?.token}` } },
+    //{ headers: { Authorization: `Bearer ${user?.token}` } },
     {
       withCredentials: true,
     }
